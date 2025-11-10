@@ -45,6 +45,18 @@ export default function RootLayout({
           }}
         />
         {/* End Google Tag Manager */}
+        {/* Google tag (gtag.js) */}
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-WC9BXRNRJ6" />
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
+              window.dataLayer = window.dataLayer || [];
+              function gtag(){dataLayer.push(arguments);}
+              gtag('js', new Date());
+              gtag('config', 'G-WC9BXRNRJ6');
+            `
+          }}
+        />
         <link rel="canonical" href="https://onmri.com" />
         <meta name="geo.region" content="GB" />
         <meta name="geo.placename" content="Sleaford, United Kingdom" />
