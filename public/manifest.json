@@ -1,0 +1,16 @@
+{
+  "name": "onMRI - AI-powered MRI Analysis",
+  "short_name": "onMRI",
+  "description": "AI-powered objective MRI analysis for quantifiable musculoskeletal imaging",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#013366",
+  "theme_color": "#013366",
+  "icons": [
+    {
+      "src": "/logo.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    }
+  ]
+}
