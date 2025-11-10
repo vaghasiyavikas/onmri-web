@@ -1,4 +1,9 @@
 User-agent: *
 Allow: /
+Crawl-delay: 1
+
+User-agent: Googlebot
+Allow: /
+Crawl-delay: 1
 
 Sitemap: https://onmri.com/sitemap.xml
