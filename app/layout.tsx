@@ -16,11 +16,24 @@ export const metadata: Metadata = {
     siteName: 'onMRI',
     locale: 'en_US',
     type: 'website',
+    images: [
+      {
+        url: 'https://onmri.com/logo.png',
+        width: 800,
+        height: 600,
+        alt: 'onMRI Logo - AI-powered MRI Analysis',
+      },
+    ],
   },
   twitter: {
     card: 'summary_large_image',
     title: 'onMRI - AI-powered MRI Analysis',
     description: 'Transform subjective MRI interpretation into objective, quantifiable measurements.',
+    images: ['https://onmri.com/logo.png'],
+  },
+  icons: {
+    icon: '/logo.png',
+    apple: '/logo.png',
   },
   viewport: 'width=device-width, initial-scale=1',
   themeColor: '#013366',
@@ -58,6 +71,8 @@ export default function RootLayout({
           }}
         />
         <link rel="canonical" href="https://onmri.com" />
+        <link rel="manifest" href="/manifest.json" />
+        <link rel="icon" href="/logo.png" type="image/png" />
         <meta name="geo.region" content="GB" />
         <meta name="geo.placename" content="Sleaford, United Kingdom" />
         <script
@@ -75,6 +90,8 @@ export default function RootLayout({
                 "addressCountry": "GB"
               },
               "medicalSpecialty": "Musculoskeletal Imaging",
+              "logo": "https://onmri.com/logo.png",
+              "image": "https://onmri.com/logo.png",
               "founder": [
                 { "@type": "Person", "name": "Paul Lee" },
                 { "@type": "Person", "name": "Tanvi Verma" }
