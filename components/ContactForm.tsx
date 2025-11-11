@@ -22,7 +22,7 @@ export default function ContactForm({ isOpen, onClose }: ContactFormProps) {
     setIsSubmitting(true)
     
     try {
-      const response = await fetch('http://localhost:8080/enquiry/onmri', {
+      const response = await fetch('https://app-api.mskdoctors.com/enquiry/onmri', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
