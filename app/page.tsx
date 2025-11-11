@@ -41,9 +41,10 @@ export default function Home() {
                 className="w-full h-auto rounded-2xl" 
                 controls
                 autoPlay
+                muted
                 loop
+                playsInline
                 poster="/report/femoral-cartilage.png"
-                style={{ maxHeight: 400 }}
               >
                 <source src="/mri-video.mp4" type="video/mp4" />
                 Your browser does not support the video tag.
