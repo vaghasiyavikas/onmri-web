@@ -1,7 +1,13 @@
+'use client'
+
 import Header from '../components/Header'
+import ContactForm from '../components/ContactForm'
 import Image from 'next/image'
+import { useState } from 'react'
 
 export default function Home() {
+  const [isContactFormOpen, setIsContactFormOpen] = useState(false)
+
   return (
     <main className="min-h-screen">
       <Header />
@@ -249,9 +255,12 @@ export default function Home() {
             <div className="mb-8">
               <div className="bg-gradient-to-r from-secondary to-accent rounded-2xl p-6 shadow-2xl border-2 border-secondary">
                 <p className="text-primary text-lg mb-3 font-semibold">For partnerships and enquiries:</p>
-                <a href="mailto:research@mskdoctors.com" className="text-primary text-2xl font-bold hover:text-white transition-colors block">
-                  research@mskdoctors.com
-                </a>
+                <button
+                  onClick={() => setIsContactFormOpen(true)}
+                  className="bg-primary text-white px-6 py-3 rounded-lg font-bold text-lg hover:bg-primary/90 transition-colors"
+                >
+                  Contact Us
+                </button>
               </div>
             </div>
             <div className="border-t border-secondary/30 pt-6">
@@ -262,6 +271,11 @@ export default function Home() {
           </div>
         </div>
       </footer>
+      
+      <ContactForm 
+        isOpen={isContactFormOpen} 
+        onClose={() => setIsContactFormOpen(false)} 
+      />
     </main>
   )
 }
