@@ -20,13 +20,35 @@ export default function Home() {
           <p className="text-xl md:text-2xl mb-8 max-w-4xl mx-auto leading-relaxed">
             Transforming subjective MRI interpretation into standardized, quantifiable measurements for superior diagnostic accuracy in musculoskeletal imaging
           </p>
-          <div className="flex flex-col md:flex-row gap-4 justify-center items-center">
+          <div className="flex flex-col md:flex-row gap-4 justify-center items-center mb-12">
             <a href="https://link.springer.com/book/9783031774553" target="_blank" rel="noopener noreferrer" className="bg-secondary text-primary px-8 py-4 rounded-full font-semibold hover:bg-white transition-colors text-lg">
               Learn More
             </a>
             <a href="https://uploads.onmri.com" target="_blank" rel="noopener noreferrer" className="border-2 border-secondary text-secondary px-8 py-4 rounded-full font-semibold hover:bg-secondary hover:text-primary transition-colors text-lg">
               View Demo
             </a>
+          </div>
+        </div>
+      </section>
+
+      {/* Video Section */}
+      <section className="py-16 bg-gradient-to-br from-gray-50 to-white">
+        <div className="container mx-auto px-4">
+          <div className="max-w-3xl mx-auto text-center">
+            <h2 className="text-3xl md:text-4xl font-bold text-primary mb-8">See onMRI in Action</h2>
+            <div className="relative bg-gradient-to-br from-blue-50/50 to-gray-50/80 rounded-3xl shadow-xl border border-gray-100">
+              <video 
+                className="w-full h-auto rounded-2xl" 
+                controls
+                autoPlay
+                loop
+                poster="/report/femoral-cartilage.png"
+                style={{ maxHeight: 400 }}
+              >
+                <source src="/mri-video.mp4" type="video/mp4" />
+                Your browser does not support the video tag.
+              </video>
+            </div>
           </div>
         </div>
       </section>
@@ -135,8 +157,40 @@ export default function Home() {
                 <div className="text-lg">Scans Analyzed</div>
               </div>
             </div>
-            
-            <div className="bg-gray-50 rounded-2xl p-8">
+            <div className="grid md:grid-cols-3 gap-6 mb-6">
+              <div className="text-center p-4 shadow-lg rounded-xl">
+                <Image
+                    src="/report/femoral-cartilage.png"
+                    alt="Femoral Cartilage Analysis"
+                    width={250}
+                    height={200}
+                    className="w-full h-48 object-contain"
+                />
+                <p className="text-sm text-gray-600 mt-2">Femoral Cartilage</p>
+              </div>
+              <div className="text-center p-4 shadow-lg rounded-xl">
+                <Image
+                    src="/report/tibial-cartilage.png"
+                    alt="Tibial Cartilage Analysis"
+                    width={250}
+                    height={200}
+                    className="w-full h-48 object-contain"
+                />
+                <p className="text-sm text-gray-600 mt-2">Tibial Cartilage</p>
+              </div>
+              <div className="text-center p-4 shadow-lg rounded-xl">
+                <Image
+                    src="/report/medial-meniscus.png"
+                    alt="Medial Meniscus Analysis"
+                    width={250}
+                    height={200}
+                    className="w-full h-48 object-contain"
+                />
+                <p className="text-sm text-gray-600 mt-2">Medial Meniscus</p>
+              </div>
+            </div>
+
+            <div className="bg-gray-50 rounded-2xl p-8 mb-12">
               <h3 className="text-2xl font-bold text-primary mb-6">Key Achievements</h3>
               <div className="grid md:grid-cols-2 gap-6">
                 <div>
