@@ -45,6 +45,7 @@ export default function Home() {
                 loop
                 playsInline
                 poster="/report/femoral-cartilage.png"
+                style={{ maxHeight: 400 }}
               >
                 <source src="/mri-video.mp4" type="video/mp4" />
                 Your browser does not support the video tag.
