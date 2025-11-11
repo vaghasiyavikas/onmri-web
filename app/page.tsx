@@ -246,9 +246,17 @@ export default function Home() {
             <p className="text-secondary mb-6">
               Revolutionizing musculoskeletal imaging with AI-powered objective analysis
             </p>
+            <div className="mb-8">
+              <div className="bg-gradient-to-r from-secondary to-accent rounded-2xl p-6 shadow-2xl border-2 border-secondary">
+                <p className="text-primary text-lg mb-3 font-semibold">For partnerships and enquiries:</p>
+                <a href="mailto:research@mskdoctors.com" className="text-primary text-2xl font-bold hover:text-white transition-colors block">
+                  research@mskdoctors.com
+                </a>
+              </div>
+            </div>
             <div className="border-t border-secondary/30 pt-6">
               <p className="text-sm text-secondary">
-                © 2024 MSK Doctors, Sleaford, United Kingdom. All rights reserved.
+                © 2025 MSK Doctors, Sleaford, United Kingdom. All rights reserved.
               </p>
             </div>
           </div>
